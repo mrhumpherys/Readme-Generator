@@ -1,9 +1,9 @@
 
   # Awesome Project
-  ![badge](https://img.shields.io/badge/license-Mozilla-brightgreen)
+  ![badge](https://img.shields.io/badge/license-Apache-brightgreen)
 
   # Description
-  This project is awesome!
+  This is an awesome project!
 
   # Table of Contents
   - [Installation](#installation)
@@ -14,19 +14,19 @@
   - [Questions](#questions)
 
   # Installation
-  run npm init and npm install in the command line
+  Run 'npm init' then 'npm install inquirer' in the root of the project in the command line.
 
   # Usage
-  run node index.js to start the prject. Then answer the prompts to complete your ReadMe
+  Run 'node index.js' to start the application.
 
   # License
-  This project is covered by the [Mozilla](https://www.mozilla.org/en-US/MPL/2.0/) license.
+  This project is covered by the [Apache](https://www.apache.org/licenses/LICENSE-2.0.txt) license.
 
   # Contributing
   Michael Humpherys
 
   # Tests
-  Currently there are no tests for this project
+  There are currently no tests for this project
 
   # Questions
-  Contact me by email or GitHub if you have any questions. [email](mailto:mrhumpherys@gmail.com), [GitHub](https://github.com/mrhumpherys)
+  Feel free to contact me at my email or Github with any questions you have. [Email](mailto:mrhumpherys@gmail.com), [GitHub](https://github.com/mrhumpherys)
