@@ -1,14 +1,10 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
 
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-
-// TODO: Create an array of questions for user input
-const questions = [];
-
-// TODO: Create a function to write README file
+// Function to write README file
 const writeFile = fileContent => {
     return new Promise((resolve, reject) => {
         fs.writeFile('./dist/SampleREADME.md', fileContent, err => {
@@ -113,7 +109,7 @@ function init() {
         {
             type: "input",
             name: "questions",
-            message: "What do I do if I have an issue? ",
+            message: "What would you like in the Questions section? Your email and Github will be included automatically.",
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -126,12 +122,12 @@ function init() {
         {
             type: "list",
             name: "license",
-            message: "Chose the appropriate license for this project: ",
+            message: "Choose the license for this project: ",
             choices: [
                 "Apache",
-                "Academic",
-                "GNU",
-                "ISC",
+                "GNU AGPLv3",
+                "GNU GPLv3",
+                "GNU LGPLv3",
                 "MIT",
                 "Mozilla",
                 "None"
@@ -174,8 +170,11 @@ init()
     .then(data2 => {
         return writeFile(data2);
     })
-    .then(writeFileResponse => {
-        console.log(writeFileResponse);
+    .then( () => {
+        console.log(`
+        Your ReadMe file has been successfully created! 
+        Check the dist folder for your new ReadME!
+        `);
     })
     .catch(err => {
         console.log(err);
